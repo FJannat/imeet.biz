@@ -1,0 +1,48 @@
+[
+    {
+        "name": "kbsali/redmine-api",
+        "version": "v1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kbsali/php-redmine-api.git",
+            "reference": "428d365d931ed5d94665752d491a5b9b2d322e69"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kbsali/php-redmine-api/zipball/428d365d931ed5d94665752d491a5b9b2d322e69",
+            "reference": "428d365d931ed5d94665752d491a5b9b2d322e69",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3.2"
+        },
+        "time": "2014-03-26 11:07:34",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Redmine": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kevin Saliou",
+                "email": "kevin@saliou.name",
+                "homepage": "http://kevin.saliou.name",
+                "role": "Developer"
+            }
+        ],
+        "description": "Redmine API client",
+        "homepage": "https://github.com/kbsali/php-redmine-api",
+        "keywords": [
+            "api",
+            "redmine"
+        ]
+    }
+]

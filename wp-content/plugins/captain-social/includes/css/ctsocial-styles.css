@@ -1,0 +1,116 @@
+/*****
+ * Social Media Icons
+ * _TODO_: Rewrite with SCSS for clarity's sake.
+**/
+
+.ctsocial {
+	display: table;   /* Allow the vertical centering to work */
+	
+	/* The Following centers the social icons if desired.
+	 * It is recommended to include it in your own stylesheet.
+	 *		.ctsocial {
+	 *			margin: 0 auto;
+	 *		}
+	 * Uncomment the next line to include it through the plugin (not recommended).*/
+	/* margin: 0 auto; */
+
+	margin-bottom: 10px;
+}
+
+
+.ctsocial ul.social {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 35px;
+}
+
+.ctsocial ul.social:hover li {
+	opacity: 0.2;
+	filter: alpha(opacity=20); /* For IE */
+}
+
+.ctsocial ul.social li {
+	display: inline;
+	float: left;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	padding-right: 3px;
+
+	transition-property: opacity;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+
+	transition-duration: 500ms;
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+}
+
+.ctsocial ul.social li:hover {
+	opacity: 1;
+	filter: none; /* Check this:; Assumed it would be alpha(opacity=100). */
+	-webkit-filter: grayscale(0%); /* Check this: Is it necessary or okay? */
+}
+
+.ctsocial ul.social li a {
+	text-align: center;
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: relative;
+}
+
+.ctsocial ul.social li.tumblr { background-image: url("../../assets/images/icons/circle/color/tumblr.svg") }
+.ctsocial ul.social li.vimeo { background-image: url("../../assets/images/icons/circle/color/vimeo.svg") }
+.ctsocial ul.social li.facebook { background-image: url("../../assets/images/icons/circle/color/facebook.png") }
+.ctsocial ul.social li.flickr { background-image: url("../../assets/images/icons/circle/color/flickr.svg") }
+.ctsocial ul.social li.pinterest { background-image: url("../../assets/images/icons/circle/color/pinterest.svg") }
+.ctsocial ul.social li.youtube { background-image: url("../../assets/images/icons/circle/color/youtube.svg") }
+.ctsocial ul.social li.twitter { background-image: url("../../assets/images/icons/circle/color/twitter.png") }
+.ctsocial ul.social li.github { background-image: url("../../assets/images/icons/circle/color/github.svg") }
+.ctsocial ul.social li.dribbble { background-image: url("../../assets/images/icons/circle/color/dribbble.svg") }
+.ctsocial ul.social li.gplus { background-image: url("../../assets/images/icons/circle/color/googleplus.png") }
+.ctsocial ul.social li.linkedin { background-image: url("../../assets/images/icons/circle/color/linkedIn.png") }
+.ctsocial ul.social li.spotify { background-image: url("../../assets/images/icons/circle/color/spotify.svg") }
+.ctsocial ul.social li.instagram { background-image: url("../../assets/images/icons/circle/color/instagram.svg") }
+.ctsocial ul.social li.behance { background-image: url("../../assets/images/icons/circle/color/behance.svg") }
+.ctsocial ul.social li.rdio { background-image: url("../../assets/images/icons/circle/color/rdio.svg") }
+.ctsocial ul.social li.soundcloud { background-image: url("../../assets/images/icons/circle/color/soundcloud.svg") }
+
+/* These are styles for alternative layouts. They will be introduced properly in a later version but are included here now for conveniance. */
+/*.ctsocial ul.social.circle.bw li.tumblr { background-image: url("../../assets/images/icons/circle/bw/tumblr.svg") }
+.ctsocial ul.social.circle.bw li.vimeo { background-image: url("../../assets/images/icons/circle/bw/vimeo.svg") }
+.ctsocial ul.social.circle.bw li.facebook { background-image: url("../../assets/images/icons/circle/bw/facebook.svg") }
+.ctsocial ul.social.circle.bw li.flickr { background-image: url("../../assets/images/icons/circle/bw/flickr.svg") }
+.ctsocial ul.social.circle.bw li.pinterest { background-image: url("../../assets/images/icons/circle/bw/pinterest.svg") }
+.ctsocial ul.social.circle.bw li.youtube { background-image: url("../../assets/images/icons/circle/bw/youtube.svg") }
+.ctsocial ul.social.circle.bw li.twitter { background-image: url("../../assets/images/icons/circle/bw/twitter.svg") }
+.ctsocial ul.social.circle.bw li.github { background-image: url("../../assets/images/icons/circle/bw/github.svg") }
+.ctsocial ul.social.circle.bw li.dribbble { background-image: url("../../assets/images/icons/circle/bw/dribbble.svg") }
+.ctsocial ul.social.circle.bw li.gplus { background-image: url("../../assets/images/icons/circle/bw/gplus.svg") }
+
+.ctsocial ul.social.square li.tumblr { background-image: url("../../assets/images/icons/square/color/tumblr.svg") }
+.ctsocial ul.social.square li.vimeo { background-image: url("../../assets/images/icons/square/color/vimeo.svg") }
+.ctsocial ul.social.square li.facebook { background-image: url("../../assets/images/icons/square/color/facebook.svg") }
+.ctsocial ul.social.square li.flickr { background-image: url("../../assets/images/icons/square/color/flickr.svg") }
+.ctsocial ul.social.square li.pinterest { background-image: url("../../assets/images/icons/square/color/pinterest.svg") }
+.ctsocial ul.social.square li.youtube { background-image: url("../../assets/images/icons/square/color/youtube.svg") }
+.ctsocial ul.social.square li.twitter { background-image: url("../../assets/images/icons/square/color/twitter.svg") }
+.ctsocial ul.social.square li.github { background-image: url("../../assets/images/icons/square/color/github.svg") }
+.ctsocial ul.social.square li.dribbble { background-image: url("../../assets/images/icons/square/color/dribbble.svg") }
+.ctsocial ul.social.square li.gplus { background-image: url("../../assets/images/icons/square/color/gplus.svg") }
+
+.ctsocial ul.social.square.bw li.tumblr { background-image: url("../../assets/images/icons/square/bw/tumblr.svg") }
+.ctsocial ul.social.square.bw li.vimeo { background-image: url("../../assets/images/icons/square/bw/vimeo.svg") }
+.ctsocial ul.social.square.bw li.facebook { background-image: url("../../assets/images/icons/square/bw/facebook.svg") }
+.ctsocial ul.social.square.bw li.flickr { background-image: url("../../assets/images/icons/square/bw/flickr.svg") }
+.ctsocial ul.social.square.bw li.pinterest { background-image: url("../../assets/images/icons/square/bw/pinterest.svg") }
+.ctsocial ul.social.square.bw li.youtube { background-image: url("../../assets/images/icons/square/bw/youtube.svg") }
+.ctsocial ul.social.square.bw li.twitter { background-image: url("../../assets/images/icons/square/bw/twitter.svg") }
+.ctsocial ul.social.square.bw li.github { background-image: url("../../assets/images/icons/square/bw/github.svg") }
+.ctsocial ul.social.square.bw li.dribbble { background-image: url("../../assets/images/icons/square/bw/dribbble.svg") }
+.ctsocial ul.social.square.bw li.gplus { background-image: url("../../assets/images/icons/square/bw/gplus.svg") }*/
